@@ -1,4 +1,4 @@
-package com.bookshopweb.servlet.client;
+package com.bookshopweb.controller.client.client;
 
 import com.bookshopweb.beans.Order;
 import com.bookshopweb.beans.OrderItem;
@@ -50,7 +50,7 @@ public class OrderDetailServlet extends HttpServlet {
             request.setAttribute("createdAt", order.getCreatedAt().format(DateTimeFormatter.ofPattern("HH:mm dd/MM/yyyy")));
             request.setAttribute("tempPrice", tempPrice);
             request.setAttribute("orderItems", orderItems);
-            request.getRequestDispatcher("/WEB-INF/views/orderDetailView.jsp").forward(request, response);
+            request.getRequestDispatcher("").forward(request, response);
         } else {
             response.sendRedirect(request.getContextPath() + "/");
         }

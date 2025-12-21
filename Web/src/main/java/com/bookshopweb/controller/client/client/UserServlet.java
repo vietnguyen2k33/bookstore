@@ -1,4 +1,4 @@
-package com.bookshopweb.servlet.client;
+package com.bookshopweb.controller.client.client;
 
 import com.bookshopweb.beans.User;
 import com.bookshopweb.service.CartService;
@@ -35,7 +35,7 @@ public class UserServlet extends HttpServlet {
             request.setAttribute("countOrderReceived", countOrderReceivedByUserId);
         }
 
-        request.getRequestDispatcher("/WEB-INF/views/userView.jsp").forward(request, response);
+        request.getRequestDispatcher("").forward(request, response);
     }
 
     @Override

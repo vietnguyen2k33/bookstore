@@ -1,4 +1,4 @@
-package com.bookshopweb.servlet.client;
+package com.bookshopweb.controller.client.client;
 
 import com.bookshopweb.beans.User;
 import com.bookshopweb.service.UserService;
@@ -23,7 +23,7 @@ public class SignupServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/views/signupView.jsp").forward(request, response);
+        request.getRequestDispatcher("").forward(request, response);
     }
 
     @Override
@@ -109,6 +109,6 @@ public class SignupServlet extends HttpServlet {
             request.setAttribute("violations", violations);
         }
 
-        request.getRequestDispatcher("/WEB-INF/views/signupView.jsp").forward(request, response);
+        request.getRequestDispatcher("").forward(request, response);
     }
 }

@@ -1,4 +1,4 @@
-package com.bookshopweb.controller.client;
+package com.bookshopweb.controller.client.client;
 
 import com.bookshopweb.beans.Product;
 import com.bookshopweb.beans.User;
@@ -42,7 +42,7 @@ public class WishlistServlet extends HttpServlet {
             request.setAttribute("wishlistItems", wishlistItems);
         }
 
-        request.getRequestDispatcher("/WEB-INF/views/wishlistView.jsp").forward(request, response);
+        request.getRequestDispatcher("").forward(request, response);
     }
 
     @Override

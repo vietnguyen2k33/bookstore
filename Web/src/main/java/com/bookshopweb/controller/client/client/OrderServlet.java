@@ -1,4 +1,4 @@
-package com.bookshopweb.servlet.client;
+package com.bookshopweb.controller.client.client;
 
 import com.bookshopweb.beans.Order;
 import com.bookshopweb.beans.OrderItem;
@@ -85,7 +85,7 @@ public class OrderServlet extends HttpServlet {
             request.setAttribute("orders", orderResponses);
         }
 
-        request.getRequestDispatcher("/WEB-INF/views/orderView.jsp").forward(request, response);
+        request.getRequestDispatcher("").forward(request, response);
     }
 
     @Override
