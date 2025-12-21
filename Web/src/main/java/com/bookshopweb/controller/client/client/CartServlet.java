@@ -1,4 +1,4 @@
-package com.bookshopweb.controller.client;
+package com.bookshopweb.controller.client.client;
 
 import com.bookshopweb.beans.Order;
 import com.bookshopweb.beans.OrderItem;
@@ -29,7 +29,7 @@ public class CartServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/views/cartView.jsp").forward(request, response);
+        request.getRequestDispatcher("").forward(request, response);
     }
 
     @Override

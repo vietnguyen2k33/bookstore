@@ -1,4 +1,4 @@
-package com.bookshopweb.servlet.client;
+package com.bookshopweb.controller.client.client;
 
 import com.bookshopweb.beans.User;
 import com.bookshopweb.service.UserService;
@@ -57,7 +57,7 @@ public class SigninServlet extends HttpServlet {
         } else {
             request.setAttribute("values", values);
             request.setAttribute("violations", violations);
-            request.getRequestDispatcher("/WEB-INF/views/signinView.jsp").forward(request, response);
+            request.getRequestDispatcher("").forward(request, response);
         }
     }
 }

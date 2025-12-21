@@ -1,4 +1,4 @@
-package com.bookshopweb.servlet.client;
+package com.bookshopweb.controller.client.client;
 
 import com.bookshopweb.beans.Category;
 import com.bookshopweb.beans.Product;
@@ -100,7 +100,7 @@ public class ProductServlet extends HttpServlet {
             request.setAttribute("averageRatingScore", averageRatingScore);
             request.setAttribute("relatedProducts", relatedProducts);
             request.setAttribute("isWishlistItem", isWishlistItem);
-            request.getRequestDispatcher("/WEB-INF/views/productView.jsp").forward(request, response);
+            request.getRequestDispatcher("").forward(request, response);
         } else {
             // Nếu id không phải là số nguyên hoặc không hiện diện trong bảng product
             response.sendRedirect(request.getContextPath() + "/");

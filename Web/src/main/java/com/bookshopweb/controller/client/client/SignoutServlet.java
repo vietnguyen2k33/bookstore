@@ -1,4 +1,4 @@
-package com.bookshopweb.servlet.client;
+package com.bookshopweb.controller.client.client;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
