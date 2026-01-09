@@ -1,4 +1,4 @@
-package com.bookshopweb.controller.client.general;
+package com.bookshopweb.controller.general;
 
 import com.bookshopweb.utils.ConstantUtils;
 

@@ -1,4 +1,4 @@
-package com.bookshopweb.controller.client.client.productreview;
+package com.bookshopweb.controller.client.productreview;
 
 import com.bookshopweb.beans.ProductReview;
 import com.bookshopweb.service.ProductReviewService;

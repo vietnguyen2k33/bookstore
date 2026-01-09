@@ -1,4 +1,4 @@
-package com.bookshopweb.controller.client.client;
+package com.bookshopweb.controller.client;
 
 import com.bookshopweb.beans.User;
 import com.bookshopweb.service.UserService;
